@@ -14,9 +14,9 @@ The project is designed as an introductory programming assignment (PA0). Most of
 ## 👥 Team Information
 
 ### Partner #1
-- **Name:**
-- **Student Number:**
-- **Email:**
+- **Name: Emilio Cabrera Isaza**
+- **Student Number: 200094546**
+- **Email: emilio.cabrera@upr.edu**
 
 ### Partner #2
 - **Name:**
