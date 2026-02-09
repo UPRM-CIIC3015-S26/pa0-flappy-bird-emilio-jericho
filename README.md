@@ -19,9 +19,9 @@ The project is designed as an introductory programming assignment (PA0). Most of
 - **Email: emilio.cabrera@upr.edu**
 
 ### Partner #2
-- **Name:**
-- **Student Number:**
-- **Email:**
+- **Name: Exel L. Munoz Sanchez**
+- **Student Number:802750008**
+- **Email: exel.munoz@uprm.edu**
 
 ## ⭐ Bonus Features (Optional)
 List and briefly describe any additional features or enhancements implemented beyond the basic requirements.
