@@ -36,7 +36,7 @@ score_y = 10
 # Player Variables -->
 bird_x = 50
 bird_y = 300
-bird_velocity = 0
+bird_velocity = 7
 # TODO 1: Tweaking the physics
 # Looks like the player is falling too quickly not giving a change to flap it's wing, maybe tweak around with the value of this variable
 gravity = 0.55
@@ -64,7 +64,7 @@ running = True
 while running:
     # TODO 6: Changing the name!
     # D'oh! This is not yout name isn't follow the detailed instructions on the PDF to complete this task.
-    name = "Exel Munoz Sanchez"
+    name = "Homer Simpson"
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
