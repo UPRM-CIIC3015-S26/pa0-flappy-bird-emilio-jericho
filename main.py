@@ -10,14 +10,14 @@ some of the game mechanics.
 '''
 # Setup the screen -->
 screen = pygame.display.set_mode((400, 600))
-pygame.display.set_caption("Flappy Bird")
+pygame.display.set_caption("Flappy Bird, But Awesome-rer") #<- Made the name more awesome-rer
 
 # Colors -->
 # NOTE: This is in the RGB (Red, Green, Blue) format
 WHITE = (255, 255, 255)
 GREEN = (0, 255, 0)
 BLACK = (0, 0, 0)
-PLAYER = (50, 55, 25)
+PLAYER = (50, 55, 25) #<- Player color switched
 
 # Font Size -->
 big_font = pygame.font.SysFont(None, 80)
@@ -36,10 +36,10 @@ score_y = 10
 # Player Variables -->
 bird_x = 50
 bird_y = 300
-bird_velocity = 6
+bird_velocity = 6 #Bird Velocity 0 -> 6
 # TODO 1: Tweaking the physics
 # Looks like the player is falling too quickly not giving a change to flap it's wing, maybe tweak around with the value of this variable
-gravity = 0.55
+gravity = 0.55 #gravity 9.81 -> 0.55
 jump = -10
 # Pipe Variables -->
 pipe_x = 400
@@ -47,12 +47,12 @@ pipe_width = 70
 # TODO 2.1: A Little gap Problem
 # You probably noticed when running the code that it's impossible the player to go through the gaps
 # play around with the pipe_gap variable so that its big enough for the player to pass through
-pipe_gap = 180
+pipe_gap = 180 #pipe_gap 20 -> 180
 pipe_height = random.randint(100, 400)
 # TODO 2.2: The too fast problem
 # The pipes are moving way too fast! Play around with the pipe_speed variable until you find a good
 # speed for the player to play in!
-pipe_speed = 5
+pipe_speed = 5 #pipe_speed 20 -> 5
 
 score = 0
 game_over = False
@@ -82,7 +82,7 @@ while running:
                     # of the bird)
                     bird_velocity = 0
                     pipe_x = 400
-                    bird_y = 300
+                    bird_y = 300 #<- Added Y coords for correct spawning
                     score = 0
                     game_over = False
                     game_started = True
@@ -99,9 +99,9 @@ while running:
             # TODO 4: Fixing the scoring
             # When you pass through the pipes the score should be updated to the current score + 1. Implement the
             # logic to accomplish this scoring system.
-            score += 1
-            pygame.mixer.music.load("bithuh-vine-boom-392646.wav")
-            pygame.mixer.music.play()
+            score += 1 #<- Scoring fixed
+            pygame.mixer.music.load("bithuh-vine-boom-392646.wav") #<- Loads "Vine Boom" sfx
+            pygame.mixer.music.play() #<- Plays "Vine Boom" sfx when point is gained
 
         if bird_y > 600 or bird_y < 0:
             game_over = True
